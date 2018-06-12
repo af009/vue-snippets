@@ -1,0 +1,27 @@
+{
+    "name": "vue-snippets",
+    "title": "Vue Snippets",
+    "description": "A collection of Vue snippets for Brackets.",
+    "homepage": "https://github.com/af009/vue-snippets",
+    "version": "1.0.0",
+    "author": "af009 <afwebd@yahoo.com>",
+    "license": "MIT",
+    "categories": "editing",
+    "keywords": [
+        "brackets",
+        "vue",
+        "snippets",
+		"code",
+		"generator",
+		"reference",
+		"autocomplete"
+    ],
+    "files": [
+        "main.js",
+        "snippet.js",
+        "README.md"
+    ],
+    "engines": {
+        "brackets": ">=0.31.0"
+    }
+}
