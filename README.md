@@ -97,7 +97,7 @@ A collection of [VUE](https://vuejs.org/) snippets for [Brackets](http://bracket
 ### Credits
 ---
 
-- vue-vscode-snippets - Sara Drasner - https://github.com/sdras/vue-vscode-snippets
+- vue-vscode-snippets - Sarah Drasner - https://github.com/sdras/vue-vscode-snippets
 - brackets-jade-snippets - George Raptis - https://github.com/georapbox/brackets-jade-snippets
 
 
