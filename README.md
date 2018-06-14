@@ -21,7 +21,7 @@ A collection of [VUE](https://vuejs.org/) snippets for [Brackets](http://bracket
 ## How to use
 1. **Enable Vue Snippets**<br/>
    Under main menu select **Edit > Enable Vue Snippets** or<br/> open the Preferences File and add **"vue-snippets.enabled": true**.
-2. Enter a snippet and hit the **Space** key.
+2. Enter a snippet and hit the **`Space`** key.
 
 
 
