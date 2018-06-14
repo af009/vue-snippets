@@ -11,26 +11,29 @@ define(function (require, exports, module) {
     //VUE BASE
 
 
-    snippets.vbase = `
-    <template>
-        
-    </template>
-        
-    <script>
-        export default { 
-            
-        }
-    </script>
-        
-    <style scoped>
-        
-    </style>`;
+    snippets.vbase = 
+`<template>
+	<div>
+     <!-- Write your HTML with Vue in here -->	
+	</div>
+</template>
+
+<script>
+    export default {
+		// Write your Vue component logic here
+    }
+</script>
+
+<style scoped>
+	/* Write your styles for the component in here */
+</style>`;
 
 
     snippets.vfor = `
 	<div v-for="item in items" :key="item.id">
 		{{ item }}
-    </div>`;
+	</div>
+	`;
     
     snippets.vmodel = `<input v-model="data" type="text" />`;
 
@@ -40,35 +43,41 @@ define(function (require, exports, module) {
 
 	snippets.velProps = `
 	<component :component="">
-	
-	</component>`;
+
+	</component>
+	`;
 
 	snippets.vsrc = `<img :src="'/path/to/images/' + fileName" alt="altText"/>`;
 
 	snippets.vstyle = `
 	<div :style="{ fontSize: data + 'px' }">
-	
-	</div>`;
+
+	</div>
+	`;
 
 	snippets.vstyleObj = `
 	<div :style="[styleObjectA, styleObjectB]">
-	
-	</div>`;
+
+	</div>
+	`;
 
 	snippets.vclass = `
 	<div :class="{ className: data }">
-	
-	</div>`;
+
+	</div>
+	`;
 
 	snippets.vclassObj = `
 	<div :class="[classNameA, classNameB]">
-	
-	</div>`;
+
+	</div>
+	`;
 
 	snippets.vclassObjMult = `
 	<div :class="[classNameA, {classNameB : condition}]">
-	
-	</div>`;
+
+	</div>
+	`;
 
 	snippets.vanim = ` 
 	<transition
@@ -77,8 +86,9 @@ define(function (require, exports, module) {
         @enter="enter"\n
         @before-leave="beforeLeave"
         @leave="leave"
-        :css="false">\n
-    </transition>`;
+        :css="false">
+    </transition>
+	`;
 
 	snippets.vnuxtl = `<nuxt-link to="/page">page</nuxt-link>`;
 
@@ -86,111 +96,125 @@ define(function (require, exports, module) {
 	// SCRIPT
 
 	snippets.vdata = `
-	data() {
-        return {
-            key: value
-        }
-    },`;
+		data() {
+			return {
+				key: value
+			}
+		},
+		`;
 
 	snippets.vmethod = `
-	methods: {
-        name() { 
-                
-        }
-    },`;
+		methods: {
+			name() { 
+
+			}
+		},
+		`;
 
 	snippets.vcomputed = `
-	computed: {
-        name() {
-            return this.data
-        }
-    },`;
+		computed: {
+			name() {
+				return this.data
+			}
+		},
+		`;
 
 	snippets.vwatcher = `
-	watch: { 
-        data(newValue, oldValue) {
+		watch: { 
+			data(newValue, oldValue) {
 
-        }
-    },`;
+			}
+		},
+		`;
 
 	snippets.vprops = `
-	props: {
-        propName: {
-            type: Number,
-            default:
-        },
-    },`;
+		props: {
+			propName: {
+				type: Number,
+				default:
+			},
+		},
+		`;
 
-	snippets.vimport = `import New from './components/New.vue';`;
+	snippets.vimport = `import New from './components/New.vue';
+`;
 
 	snippets.vcomponents = `
-	components: {
-        New,
-    }`;
+		components: {
+			New,
+		}
+		`;
 
 	snippets.vimportExport = `
 	import Name from './components/Name.vue'
-        
-        export default {
-            components: {
-                Name
-            },
-        }`;
+
+		export default {
+			components: {
+				Name
+			},
+		}
+		`;
 
 	snippets.vfilter = `
-	filters: {
-       fnName: function(value) {
-           return value;
-       }
-   	}`;
+		filters: {
+		   fnName: function(value) {
+			   return value;
+		   }
+		}`;
 
 	snippets.vmixin = `
-	const mixinName = {
-       mounted() {
-           console.log('hello from mixin!')
-       },
-	}`;
+		const mixinName = {
+		   mounted() {
+			   console.log('hello from mixin!')
+		   },
+		}
+		`;
 
 	snippets.vmixinUse = `mixins: [mixinName]`;
 
 	snippets.vcDirect = `
-	Vue.directive('directiveName', {
-    	bind(el, binding, vnode) {
-        	el.style.arg = binding.value.arg;
-    	}
-  	});`;
+		Vue.directive('directiveName', {
+			bind(el, binding, vnode) {
+				el.style.arg = binding.value.arg;
+			}
+		});
+		`;
 
 	snippets.vimportLib = `import { libName } from 'libName'`;
 
 	snippets.vimportGsap = `import { TimelineMax, Ease } from 'gsap'`;
 
 	snippets.vanimhookJS = `
-	beforeEnter(el) {
-    	console.log('beforeEnter');
-	},
+		beforeEnter(el) {
+			console.log('beforeEnter');
+		},
 
-	enter(el, done) {
-    	console.log('enter');
-    	done();
-	},
+		enter(el, done) {
+			console.log('enter');
+			done();
+		},
 
-	beforeLeave(el) {
-    	console.log('beforeLeave');
-	},
+		beforeLeave(el) {
+			console.log('beforeLeave');
+		},
 
-	leave(el, done) {
-    	console.log('leave');
-    	done();
-	},`;
+		leave(el, done) {
+			console.log('leave');
+			done();
+		},
+		`;
 
 	snippets.vcommit = `
-	mutationName() {
-    	this.store.commit('mutationName', payload)
-	}`;
+		mutationName() {
+			this.store.commit('mutationName', payload)
+		}
+		`;
 
-	snippets.vdispatch = `actionName() {
-    	this.store.dispatch('actionName', payload)
-	}`;
+	snippets.vdispatch = `
+		actionName() {
+    		this.store.dispatch('actionName', payload)
+		}
+		`;
 
 	snippets.vtest = `
 	import Vue from 'vue'
@@ -203,7 +227,8 @@ define(function (require, exports, module) {
 			expect(vm.el.querySelector('.hello h1').textContent)
 				.to.equal('Welcome to Your Vue.js App')
 		})
-	})`;
+	})
+	`;
 
 	snippets.vinc = `return this.num += 1`;
 
@@ -223,28 +248,32 @@ define(function (require, exports, module) {
 		state: {
 			key: value
 		}
-	});`;
+	});
+	`;
 
 	snippets.vgetter = `
-	getters: {
-    	value: state => {
-        	return state.value;
-    	}
-	}`;
+		getters: {
+			value: state => {
+				return state.value;
+			}
+		}
+		`;
 
 	snippets.vmutation = `
-	mutations: {
-    	updateValue(state, payload) {
-        	state.value = payload;
-    	}
-	}`;
+		mutations: {
+			updateValue(state, payload) {
+				state.value = payload;
+			}
+		}
+		`;
 
 	snippets.vaction = `
-	actions: {
-    	updateValue({commit}, payload) {
-        	commit('updateValue', payload);
-    	}
-	}`;
+		actions: {
+			updateValue({commit}, payload) {
+				commit('updateValue', payload);
+			}
+		}
+		`;
 
 	snippets.vstoreImport = `import { store } from './store/index';`;
 
