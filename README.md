@@ -1,6 +1,10 @@
 # Vue Snippets
 
-
+[![Downloads](https://badges.ml/vue-snippets/total.svg)](https://brackets-extension-badges.github.io#vue-snippets)
+[![Downloads](https://badges.ml/vue-snippets/last-version.svg)](https://brackets-extension-badges.github.io#vue-snippets)
+[![Downloads](https://badges.ml/vue-snippets/week.svg)](https://brackets-extension-badges.github.io#vue-snippets)
+[![Downloads](https://badges.ml/vue-snippets/day.svg)](https://brackets-extension-badges.github.io#vue-snippets)
+[![Version](https://badges.ml/vue-snippets/version.svg)](https://brackets-extension-badges.github.io#vue-snippets)
 
 ## Description
 
